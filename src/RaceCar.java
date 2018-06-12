@@ -1,9 +1,12 @@
 
 
 public class RaceCar {
+	int position = 5;
 	private String brand;
 	private int positionInRace;
 	public boolean damaged = false;
+	
+	
 	
 	/**
 	 * 
@@ -69,5 +72,12 @@ public class RaceCar {
 			positionInRace--;
 			System.out.println("Your car has moved into position number "+positionInRace+"!");
 		}
+	}
+	
+	public void win() {
+		
+		positionInRace = 1;
+		System.out.println("YOU WIN");
+	
 	}
 }

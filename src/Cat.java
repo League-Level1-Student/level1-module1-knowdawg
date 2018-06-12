@@ -1,3 +1,5 @@
+import sun.applet.Main;
+
 /*
  *    Copyright (c) The League of Amazing Programmers 2013-2017
  *    Level 1
@@ -9,6 +11,8 @@
 
         // 1. Make the Cat meow
 		
+
+
 		// 2. Get the Cat to print it's name
 
 		// 3. Kill the Cat!
@@ -16,6 +20,8 @@
 
 
 public class Cat {
+	
+	
 
 	private String name;
 	private int lives = 9;
