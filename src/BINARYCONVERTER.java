@@ -17,6 +17,7 @@ public class BINARYCONVERTER implements ActionListener {
 	JButton button = new JButton();
 	
 	
+	
 	JTextField answer = new JTextField(20);
 	
 	public static void main(String[] args) {
@@ -28,11 +29,21 @@ public class BINARYCONVERTER implements ActionListener {
 	
 	public void setUp() {
 		
-		binaryNum1 = JOptionPane.showInputDialog("ENTER A 8 NUMBER NUMBER");
-		//binaryNum = Integer.parseInt(binaryNum1);
-		frame.add(button);
+		//binaryNum1 = JOptionPane.showInputDialog("ENTER A 8 NUMBER NUMBER");
+		
+		
+		
+		frame.add(panel);
+		panel.add(answer);
+		panel.add(button);
+		panel.add(label);
+		
 		button.addActionListener(this);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.setVisible(true);
+		label.setText("");
+		button.setText("Convert");
+		frame.pack();
 
 	}
 
@@ -61,8 +72,8 @@ public class BINARYCONVERTER implements ActionListener {
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
-		
-		convert(binaryNum1);
+		convert(answer.getText());
+		label.setText(convert(answer.getText()));
 		
 	}
 	
